@@ -45,8 +45,8 @@ section {
 }
 
 .logo img {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
 }
 
 
@@ -56,11 +56,14 @@ section {
   position: fixed;
   top: 0;
   left: 0;
+  padding: 0.1rem 5%;
+  background:  rgba(255,255,255,0.8);
+   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 
-  padding: 1rem 9%;
-  background: var(--bg-color);
-
-  z-index: 100;
+  z-index: 1000;
+  transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+  
 }
 .header {
   display: grid;
@@ -69,7 +72,7 @@ section {
   align-items: center;
   width: 100%;
 
-  border-bottom: 1px solid #611313;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .headerMenu {
@@ -96,14 +99,10 @@ header ul li:last-child {
 .header ul li a {
   text-decoration: none;
   color: var(--snd-bg-color);
-  /*padding: 22px 0;*/
   padding: 10px 5px;
-  /*display: inline-block;*/
   display: flex;
   transition: all ease 0.3s;
-  /*font-size: 18px;*/
-  font-size: 2em;
-
+  font-size: 1.4em;
   justify-content: space-between;
 }
 /*.header ul li a:hover {
