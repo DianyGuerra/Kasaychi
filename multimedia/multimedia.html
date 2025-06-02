@@ -41,11 +41,11 @@
                 <a href="#activities" class="active">Actividades</a>
                 <ul class="submenu">
                     <li><a href="../actividades/socialActivities.html">Sociales</a></li>
-                    <li><a href="../actividades/economyActivities.html">Economicas</a></li>
+                    <li><a href="../actividades/economyActivities.html">Económicas</a></li>
                 </ul>
                 </li>
                 <li>
-                <a href="./multimedia/multimedia.html" class="active">Multimedia</a>
+                <a href="#" class="active">Multimedia</a>
                 </li>
                 <li>
                 <a href="../proyectos/projects.html" class="active">Proyectos</a>
@@ -59,21 +59,29 @@
     </header>
 
     <main>
-
-
-        <!--ABOUT SECTION DESIGN -->
-        <section class="about" id="about">
-            <div class="about-img">
-                <img src="./images/Foto carnet.jpg" alt="" />
+        <section class="multimedia-carousel">
+          <h2 class="heading"><span>Multimedia</span></h2>
+          <div class="carousel">
+            <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
+            
+            <div class="carousel-track">
+              <img src="../images/AulasEscuela.jpg" alt="Aulas de la escuela" />
+              <img src="../images/childsEscuela.jpg" alt="Niños en la escuela" />
+              <img src="../images/fondoLejanoCalleAlto.jpg" alt="Paisaje" />
+              <img src="../images/CalleEntrada.jpg" alt="Calle Entrada" />
+              <img src="../images/childsInWoodPlatform.jpg" alt="Niños en mirador" />
+              <img src="../images/festividades.png" alt="Festividades" />
+              <img src="../images/Img1.1.png" alt="Paisaje" />
+              <img src="../images/vestimenta.jpg" alt="Vestimenta" />
+              <img src="../images/YOGURT.jpg" alt="Niños en la calle 5" />
             </div>
-            <div class="about-content">
-                <br /><br />
-                <h2 class="heading"><span>Multimedia</span></h2>
-                <br /> <br />                  
-                    
-            </div>
+            
+            <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button>
+          </div>
         </section>
 
+          
+        </section>
       
     </main>
 
@@ -111,7 +119,8 @@
     <!--To give movements of appearing-->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!--To give the effect of typing and retyping some words-->
+    <script src="../scripts/carrousel.js"></script>
 
-    <script src="../script.js"></script>
+    <script src="../scripts/script.js"></script>
   </body>
 </html>
